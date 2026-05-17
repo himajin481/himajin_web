@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ページのタイトル（最大約25〜30文字推奨） -->
+  <meta property="og:title" content="Himajin's Site">
+
+  <!-- ページの概要（最大約100〜120文字推奨） -->
+  <meta property="og:description" content="AI、Minecraft統合版、PCいじりが好きな中学生のポートフォリオサイト。">
+
+  <!-- 展開したい画像のURL（推奨サイズ: 1200x630px） -->
+  <!-- ※ 実際のサイト公開後、絶対パスに変更してください -->
+  <meta property="og:image" content="https://あなたのサイトのURL.com/webhaikei.png">
+
+  <!-- サイトのURL -->
+  <!-- ※ 実際のサイト公開後、絶対パスに変更してください -->
+  <meta property="og:url" content="https://あなたのサイトのURL.com/">
+
+  <!-- サイトのテーマカラー（左側の縦線の色） -->
+  <meta name="theme-color" content="#090a82">
+
+  <!-- Twitterカード（Discordはこちらもサポートしています） -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Himajin's Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>HIMAJIN</h1>
+      <p>Welcome to my portfolio</p>
+      <button id="themeButton"
+        style="margin-top: 1rem; padding: 0.5rem 1rem; cursor: pointer; font-family: inherit; background: #fff; color: #000; border: none; border-radius: 4px;">テーマ変更</button>
+    </div>
+  </header>
+  <main style="padding: 2rem; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        AI、Minecraft統合版、PCいじりが好きな中学生。<br>
+        何か作ったり、試したり、壊したりして遊んでる。
+      </p>
+    </section>
+    <section class="card">
+      <h2>Games</h2>
+      <ul>
+        <li>Minecraft Bedrock Edition</li>
+        <li>Splatoon</li>
+        <li>VRChat</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://x.com/Himajin_0123_" target="_blank">X / Twitter</a>
+        <a href="https://github.com/himajin481" target="_blank">GitHub</a>
+        <a href="https://discord.gg/dbaDneR7cc" target="_blank">Discord</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Main PC</h2>
+      <ul>
+        <li>CPU: i7-13700H</li>
+        <li>GPU: RTX 4050 Laptop</li>
+        <li>RAM: 16GB DDR4-3200</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Sub PC</h2>
+      <ul>
+        <li>CPU: i7-4500U</li>
+        <li>RAM: 4GB DDR3</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Now</h2>
+      <p id="statusText">現在サイト改造中...</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Himajin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

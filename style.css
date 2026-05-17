@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  image-rendering: pixelated; /* 画像や背景のドットをくっきりさせる */
+}
+
+body {
+  background: #090a82;
+  color: #e6edf3;
+  font-family: 'DotGothic16', sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  position: relative;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* webhaikeiの画像URLをurl()内に指定してください */
+  background: linear-gradient(rgba(9, 10, 130, 0.7), rgba(9, 10, 130, 0.7)), url('./webhaikei.png');
+  background-size: cover;
+  border-bottom: 8px solid #000; /* ドット風の太い境界線 */
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #333;
+}
+
+.links a {
+  color: #a3c1ff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+body.light-mode {
+  background: #f0f0f0;
+  color: #333;
+}
+body.light-mode .card {
+  background: rgba(255, 255, 255, 0.8);
+  border-color: #ccc;
+}
+body.light-mode .hero {
+  background: linear-gradient(rgba(200, 200, 255, 0.7), rgba(200, 200, 255, 0.7)), url('./webhaikei.png');
+  background-size: cover;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-top: 2px solid #333;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(#0000001a 0% 25%, transparent 0% 50%) 50% / 4px 4px; /* 画面全体に薄いドット網を重ねる */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-shadow: 4px 4px 0px #000; /* テキストにドット風の影を付ける */
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+}
